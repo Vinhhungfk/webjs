@@ -1,0 +1,24 @@
+
+<%- include('header',{title : 'Đăng Nhập' }); -%>
+      
+  <h2>đăng Nhập</h2>
+
+    
+    <form method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input style="max-width:400px" type="text" class="form-control" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input style="max-width:400px" type="password" class="form-control" id="password" name="password">
+          </div>
+
+        
+        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+    </form>
+
+
+    <%- include('footer'); -%>
+            

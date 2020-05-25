@@ -1,0 +1,39 @@
+
+<%- include('header',{title : 'Todo' }); -%>
+            
+
+<h2> Việc Làm</h2>
+
+
+<br><br>
+<% todos.forEach(function (t) { %>
+
+ 
+    <a class="list1" href=""><span style="color:red">•</span> <%= t.name %> </li></a>
+    <a class="xah" style="border-radius: 10px;margin-left:4px" href="/todos/<%= t.id %>/done" title="click để xóa">X</a><br><br>
+
+<% }); %>
+
+<br><br>
+
+
+<form method="POST">
+    <div class="form-group">
+      <label for="email">Thêm Công việc</label>
+      <input style="max-width:300px" type="text" class="form-control" id="cv" name="cv">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+
+
+
+
+</div>
+ <div class="footer"><img style="margin-left:10px" src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/view-512.png" width="15px"/>
+    views: null <br />
+    <img style="margin-left:10px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png" width="12px"/>
+    Node Js test</div>
+</body>
+</html>

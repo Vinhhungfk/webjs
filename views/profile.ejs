@@ -1,0 +1,27 @@
+            
+<%- include('header',{title : 'Thông Tin' }); -%>
+        <div class="container">
+        <h1> view profile</h1>
+
+        <ul>
+            <li>ID: <%= currentUser.id%></li>
+            <li>Email: <%= currentUser.email%></li>
+            <li>Tên Hiển thị: <%= currentUser.displayName%></li>
+        </ul>
+
+
+
+
+
+        <form method="post" enctype="multipart/form-data">
+           Hình đại diện <br>
+            <input type="file" id="avatar" name="avatar">
+            <input type="submit" value="Upload Image" name="submit">
+        </form>
+
+
+
+
+
+        <%- include('footer'); -%>
+            

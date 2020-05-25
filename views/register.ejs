@@ -1,0 +1,31 @@
+
+<%- include('header',{title : 'Đăng Ký' }); -%>
+      
+
+<div class="container">
+<h2>Đăng Ký</h2>
+
+
+<form method="POST">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input  style="max-width:400px" type="text" class="form-control" id="email" name="email">
+    </div>
+
+    <div class="form-group">
+        <label for="displayName">Tên hiển thị</label>
+        <input  style="max-width:400px" type="text" class="form-control" id="displayName" name="displayName">
+      </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input  style="max-width:400px" type="password" class="form-control" id="password" name="password">
+      </div>
+
+    
+    <button type="submit" class="btn btn-primary">Đăng ký</button>
+</form>
+
+
+<%- include('footer'); -%>
+        
